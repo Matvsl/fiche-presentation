@@ -1,0 +1,82 @@
+*, ::after, ::before {
+box-sizing:content-box; -moz-box-sizing:initial; -webkit-box-sizing:initial;
+}
+
+.topCAN {
+margin:auto; width:500px; height:75px; text-align:left; line-height:18px;
+}
+.npCAN {
+display:inline-block; vertical-align:top;
+width:205px; height:65px; padding-top:10px; overflow:hidden;
+text-align:center; line-height:normal; font-family:Arial; font-weight:bold; font-size:22px; text-transform:uppercase; letter-spacing:3px; 
+}
+.abtCAN {
+display:inline-block; vertical-align:top;
+width:275px; height:55px; padding:10px; overflow:hidden; 
+font-size:11px; font-family:Arial; text-align:justify; line-height:14px; 
+}
+.abtCAN:hover {
+overflow-y:auto;
+}
+.boxCAN {
+margin:15px auto; width:500px; line-height:normal; 
+}
+.phyzCAN {
+display:inline-block; vertical-align:top; 
+width:200px; height:320px; overflow:hidden;
+}
+.phyzCAN div {
+position:relative;
+width:200px; height:320px; 
+}
+.phyzCAN div img {
+position:absolute; top:0; left:0; 
+width:200px; min-height:320px; 
+transition:transform 0.5s linear; -webkit-transition:-webkit-transform 0.5s linear;
+}
+.phyzCAN div:hover img {
+transform:translateX(-200px); -webkit-transform:translateX(-200px);
+}
+.phyzCAN div p {
+margin-top:0; 
+width:180px; height:300px; padding:10px; overflow-y:auto;
+font-size:11px; font-family:Arial; text-align:justify; line-height:14px; 
+}
+.caraCAN {
+display:inline-block; vertical-align:top;
+width:275px; height:300px; padding:10px; overflow:hidden; border-left:5px solid;
+font-size:11px; font-family:Arial; text-align:justify; line-height:17px;
+}
+.caraCAN:hover {
+overflow-y:auto;
+}
+.storyCAN {
+width:500px; height:auto;
+}
+.storyCAN span {
+display:block; width:500px; padding:5px 0;
+text-align:center; font-family:Arial; font-weight:bold; font-size:22px; text-transform:uppercase; letter-spacing:5px; 
+}
+.storyCAN div {
+position:absolute; margin-top:-320px;
+width:480px; height:0; padding:0 10px; overflow-y:auto; 
+text-align:justify; font-size:12px; font-family:Arial; line-height:17px;
+transition:all 0.75s linear; -webkit-transition:all 0.75s linear; 
+}
+.storyCAN:hover div {
+width:480px; height:300px; padding:10px; 
+}
+.UCAN {
+margin:auto; width:480px; min-height:75px; padding:10px;
+font-size:11px; font-family:Arial; text-align:justify; line-height:14px;
+}
+.UCAN img:nth-of-type(1) {
+float:left; margin-right:10px; width:75px; height:75px; 
+}
+.cdtCAN {
+position:absolute; margin-left:35px; margin-top:50px;
+opacity:0; transition:opacity ease 0.55s; -webkit-transition:opacity ease 0.55s;
+}
+.cdtCAN:hover {
+opacity:1;
+}
