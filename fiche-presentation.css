@@ -1,82 +1,76 @@
-*, ::after, ::before {
-box-sizing:content-box; -moz-box-sizing:initial; -webkit-box-sizing:initial;
+/* ***FICHE DE PRÉSENTATION*** */
+.corps-fiche {
+border-radius: 10px;
+background: #151515;
+width: 700px;
 }
 
-.topCAN {
-margin:auto; width:500px; height:75px; text-align:left; line-height:18px;
+.nom-superstar {
+font-size: 24px;
+font-weight: 700;
+text-transform: uppercase;
+padding-top: 15px;
+line-height: 80%;
 }
-.npCAN {
-display:inline-block; vertical-align:top;
-width:205px; height:65px; padding-top:10px; overflow:hidden;
-text-align:center; line-height:normal; font-family:Arial; font-weight:bold; font-size:22px; text-transform:uppercase; letter-spacing:3px; 
+
+.surnom-superstar {
+font-size: 11px;
+font-weight: 400;
+text-transform: lowercase;
 }
-.abtCAN {
-display:inline-block; vertical-align:top;
-width:275px; height:55px; padding:10px; overflow:hidden; 
-font-size:11px; font-family:Arial; text-align:justify; line-height:14px; 
+
+.superstar-wrapper {
+display: flex;              /* Aligne les enfants horizontalement */
+align-items: flex-start;    /* (Optionnel) Aligne les éléments en haut */
+gap: 15px;                  /* Espace entre les deux blocs */
+padding: 15px;
 }
-.abtCAN:hover {
-overflow-y:auto;
+
+.photo-superstar {
+width: 150px !important;
+height: 210px !important;
 }
-.boxCAN {
-margin:15px auto; width:500px; line-height:normal; 
+
+.photo-superstar img {
+width: 100%;
+height: 100%;
+object-fit: cover; /* Redimensionne et remplit le conteneur */
+display: block; /* Évite les petits espaces blancs sous l\'image */
 }
-.phyzCAN {
-display:inline-block; vertical-align:top; 
-width:200px; height:320px; overflow:hidden;
+
+.photo-superstar img:hover {
+filter: grayscale(100%); /* Noir et blanc au survol */
 }
-.phyzCAN div {
-position:relative;
-width:200px; height:320px; 
+
+.presentation-superstar {
+width: 520px;
+height: 210px;
+text-align: justify;
+overflow-y: auto;      /* Ajoute une barre de défilement verticale */
 }
-.phyzCAN div img {
-position:absolute; top:0; left:0; 
-width:200px; min-height:320px; 
-transition:transform 0.5s linear; -webkit-transition:-webkit-transform 0.5s linear;
+
+.gimmick-superstar {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  width: 150px;
 }
-.phyzCAN div:hover img {
-transform:translateX(-200px); -webkit-transform:translateX(-200px);
+
+.gimmick-superstar label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
-.phyzCAN div p {
-margin-top:0; 
-width:180px; height:300px; padding:10px; overflow-y:auto;
-font-size:11px; font-family:Arial; text-align:justify; line-height:14px; 
+
+.gimmick-superstar select {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
-.caraCAN {
-display:inline-block; vertical-align:top;
-width:275px; height:300px; padding:10px; overflow:hidden; border-left:5px solid;
-font-size:11px; font-family:Arial; text-align:justify; line-height:17px;
-}
-.caraCAN:hover {
-overflow-y:auto;
-}
-.storyCAN {
-width:500px; height:auto;
-}
-.storyCAN span {
-display:block; width:500px; padding:5px 0;
-text-align:center; font-family:Arial; font-weight:bold; font-size:22px; text-transform:uppercase; letter-spacing:5px; 
-}
-.storyCAN div {
-position:absolute; margin-top:-320px;
-width:480px; height:0; padding:0 10px; overflow-y:auto; 
-text-align:justify; font-size:12px; font-family:Arial; line-height:17px;
-transition:all 0.75s linear; -webkit-transition:all 0.75s linear; 
-}
-.storyCAN:hover div {
-width:480px; height:300px; padding:10px; 
-}
-.UCAN {
-margin:auto; width:480px; min-height:75px; padding:10px;
-font-size:11px; font-family:Arial; text-align:justify; line-height:14px;
-}
-.UCAN img:nth-of-type(1) {
-float:left; margin-right:10px; width:75px; height:75px; 
-}
-.cdtCAN {
-position:absolute; margin-left:35px; margin-top:50px;
-opacity:0; transition:opacity ease 0.55s; -webkit-transition:opacity ease 0.55s;
-}
-.cdtCAN:hover {
-opacity:1;
+
+.conteneur-attributs {
+width: 150px;
+height: 50px;
 }
